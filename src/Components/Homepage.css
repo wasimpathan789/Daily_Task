@@ -1,0 +1,124 @@
+.mainContainer {
+    display: flex;
+    background: rgb(246,248,250);
+
+}
+.front-view {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: burlywood; */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    height: 70px;
+    /* width: 100%; */
+    padding: 0px 20px;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 6px 10px;
+    width: auto;
+    box-shadow: 8px 8px 5px #aaaaaa;
+}
+.searchbox {
+    /* border: 1px solid goldenrod; */
+    background: transparent;
+    padding: 6px 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    width: 30vw;
+
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    
+}
+input:focus{
+    color: #06df8c;
+    scale: 1.2;
+    transition: all 0.3s ease-in-out;
+    padding: 0px 40px;
+    font-size: 1rem;
+
+}
+.nav-links  {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:rgba(13, 13, 14, 0.964);
+    width: 150px;
+    border-radius: 5px;
+    height: auto;
+    padding: 20px 20px;
+    transition: all ease-in-out 0.3s;
+    z-index: 999;
+
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+nav ul li a span {
+    width: 60px;
+    /* background-color: red; */
+}
+nav ul li a:hover{
+    color: #00ff9d;
+    scale: 1.1;
+    transition: all 0.3s linear;
+}
+
+.theme {
+    /* border: 1px solid ; */
+    /* padding: 0px 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 50px;
+    cursor: pointer;
+    /* box-shadow: 10px 10px 8px 10px #d51111; */
+}
+.themeChild {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 21px 5px;
+}
+.themeChild:hover {
+    color: #00ff9d;
+    scale: 1.1;
+    transition: all 0.3s linear;
+    background-color: gray;
+    border-radius: 5px;
+}
+.nav-links.active {
+    top: -30%;;
+   
+}
+
